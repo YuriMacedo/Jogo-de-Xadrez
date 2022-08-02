@@ -19,5 +19,7 @@ namespace Xadrez_Console.tabuleiro
             this.qteMovimentos = 0;
             this.tab = tab;
         }
+
+        
     }
 }
