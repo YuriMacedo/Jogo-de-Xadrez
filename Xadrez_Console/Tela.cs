@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using tabuleiro;
-
+using xadrez;
 
 namespace Xadrez_Console
 {
@@ -46,6 +46,14 @@ namespace Xadrez_Console
                 Console.ForegroundColor = aux;
                
             }
+        }
+
+        public static PosicaoXadrez lerPosicaoXadrez() 
+        {
+            string s = Console.ReadLine().ToUpper();
+            char coluna = s[0];
+            int linha = int.Parse(s[1] + "");
+            return new PosicaoXadrez(coluna,linha);
         }
     }
 }
